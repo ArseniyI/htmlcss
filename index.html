@@ -3,52 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <title>RADOS</title>
+    <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
-    <h1>Healthy Way = Longer Life</h1>
-    <table>
-        <tr>
-            <td>RADOS<img src="images/design/heart.png" title="Heart"/><br/>Vitamins & Proteins</td>
-            <td>
-                <form>
-                    <input type="text" value="Search..."/>
-                    <input type="button" value="Go"/>
-                </form>
-            </td>
-            <td>
-                <form>
-                    <input type="button" value="Sign In"/>
-                </form> 
-            </td>
-            <td>
-                <a href="/cart" title="cart">
-                    <img src="images/design/cart.png" title="Cart"/>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <div>Healthy Way = Longer Life</div>
+    <div>RADOS<img src="images/design/heart.png" alt="Heart"/><br/>Vitamins & Proteins</div>
     <div>
-        All
+        <form>
+            <input type="text" value="Search..."/>
+            <input type="button" value="Go"/>
+        </form>
     </div>
     <div>
-        Proteins
+        <form>
+            <input type="button" value="Sign In"/>
+        </form> 
     </div>
     <div>
-        Vitamins
+        <a href="/cart" title="cart">
+            <img src="images/design/cart.png" alt="Cart"/>
+        </a>
     </div>
+    <nav>
+        <a href="/">All</a> |
+        <a href="/proteins/">Proteins</a> |
+        <a href="/vitamins/">Vitamins</a> |
+        <a href="/other/">Other</a>
+    </nav>
     <div>
-        Other
+        <img src="images/design/provit.jpg" alt="Proteins & Vitamins"/> 
     </div>
-    <div>
-        <img src="images/design/provit.jpg" title="Proteins & Vitamins"/> 
-    </div>
-    <div id="products">
+    <section id="products">
+        <h2>Our Products</h2>
         <form>
             <div class="product">
                 <div class="product_image_container">
-                    <img src="images/products/protein.jpg" title="Protein" class="product_image"/>
+                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
                 </div>
                 <div class="product_name">
                     Protein
@@ -71,7 +62,7 @@
             </div>
             <div class="product">
                 <div class="product_image_container">
-                    <img src="images/products/protein.jpg" title="Protein" class="product_image"/>
+                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
                 </div>
                 <div class="product_name">
                     Protein
@@ -94,7 +85,7 @@
             </div>
             <div class="product">
                 <div class="product_image_container">
-                    <img src="images/products/protein.jpg" title="Protein" class="product_image"/>
+                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
                 </div>
                 <div class="product_name">
                     Protein
@@ -117,7 +108,7 @@
             </div>
             <div class="product">
                 <div class="product_image_container">
-                    <img src="images/products/protein.jpg" title="Protein" class="product_image"/>
+                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
                 </div>
                 <div class="product_name">
                     Protein
@@ -139,26 +130,26 @@
                 </div>
             </div>
         </form>
-    </div>
-    <div>
-        <h1>Join Us</h1>
+    </section>
+    <section>
+        <h2>Join Us</h2>
         <a href="http://youtube.com">
-            <img src="images/design/youtube.png" title="Youtube" class="youtube"/>
+            <img src="images/design/youtube.png" alt="Youtube" class="youtube"/>
         </a>
         <a href="http://instagram.com">
-            <img src="images/design/instagram.jpeg" title="Instagram" class="instagram"/>
+            <img src="images/design/instagram.jpeg" alt="Instagram" class="instagram"/>
         </a>
         <a href="http://facebook.com">
-            <img src="images/design/facebook.png" title="Facebook" class="facebook"/>
+            <img src="images/design/facebook.png" alt="Facebook" class="facebook"/>
         </a>
-    </div>
-    <div>
-        <h1>Our Location</h1>
+    </section>
+    <section>
+        <h2>Our Location</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13764.90034140286!2d-97.7525361!3d30.401355150000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc84359538cf%3A0xf168fe6ee6979380!2sH-E-B!5e0!3m2!1sen!2sus!4v1600059344770!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <div>
+    </section>
+    <section>
         <form>
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
             <label for="name"> Name:</label>
             <input type="text" name="name" id="name"/><br/>
             <label for="email"> Email:</label>
@@ -167,6 +158,6 @@
             <input type="text" name="phone" id="phone"/><br/>
             <input type="button" value="Submit"/>
         </form>
-    </div>
+    </section>
 </body>
 </html>
