@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap");
+
+body 
+{
+    max-width: 980px;
+    margin:auto;
+}
+.slogan 
+{
+    font-family: 'Almendra Display', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.logo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+.logo_image
+{
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
 #products
 {
     background-color: orange;
@@ -26,8 +50,9 @@
 {
     height: 250px;
 }
-select {
+select 
+{
         height:32px;
         line-height:32px;
         background:#f4f4f4;
-    }
+}
