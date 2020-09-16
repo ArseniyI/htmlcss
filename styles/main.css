@@ -4,7 +4,7 @@ body
 {
     max-width: 980px;
     margin:auto;
-    background-color: #c40a32;
+    background-image: linear-gradient(#c40a32, #998100);
 }
 .slogan 
 {
@@ -26,6 +26,7 @@ body
 .logo_image
 {
     height: 26px;
+    background-image: #fefbd8;
 }
 .tagline
 {
