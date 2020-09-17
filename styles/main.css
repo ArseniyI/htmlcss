@@ -12,16 +12,30 @@ body
     font-size: 3.5rem;
     text-align: center;
 }
-.firstline 
+.first_line 
 {
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
     align-items: center;
+    display: flex;
+}
+.second_line 
+{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .logo
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
+    background-image: url("../images/design/heartnew.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 26px;
+    padding-right: 28px;
 }
 .logo_image
 {
@@ -30,17 +44,27 @@ body
 .tagline
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;    
+    font-size: 14px;   
 }
 .search
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+.search_button
+{
+    background-color: #ffd700;
+    border: 1px solid black;
+}
 .signin
 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+.signin_button
+{
+    background-color: #ffd700;
+    border: 1px solid black;
 }
 .basket
 {
@@ -50,14 +74,31 @@ body
 {
     height: 26px;
 }
-#products
-{
-    /*background-color: orange;*/
+@media (min-width: 500px) {
+    #products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        grid-gap: 5px;
+    }    
+}
+
+@media (min-width: 660px) {
+    #products {
+        grid-template-columns: 1fr 1fr 1fr;    
+    }    
+}
+
+@media (min-width: 980px) {
+    #products {
+        grid-template-columns: repeat(3, 1fr);    
+    }    
 }
 .product
 {
-    /*background-color: green;*/
     text-align: center;
+    box-shadow: lightgray 3px 3px;
+    margin: 10px;
+    min-width: 300px;
 }
 .product_image
 {
@@ -76,11 +117,32 @@ body
 }
 .add_to_cart_button
 {
-    height: 250px;
+    height: 32px;
+    background-color: #ffd700;
+    border: 1px solid black;
 }
 select 
 {
-        height:32px;
-        line-height:32px;
-        background:#f4f4f4;
+    height:32px;
+    line-height:32px;
+    background:#f4f4f4;
+}
+a.link
+{
+    background-color: #ff6624;
+    padding: 15px;
+    border: 1px solid #ffd700;
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+a.link:hover
+{
+    text-decoration: underline;
+    background-color: red;
+}
+.provit
+{
+    width: 100%;
 }

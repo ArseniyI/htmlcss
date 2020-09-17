@@ -9,132 +9,128 @@
 <body>
     <div class="slogan">Healthy Way = Longer Life</div>
     <header>
-        <form>
-            <nav class="header-nav">
-                <div class="firstline">
-                    <span class="logo">RADOS<img class="logo_image" src="images/design/heartnew.png" alt="Heart"/></span>
-                    <!--<span class="tagline">Vitamins & Proteins</span>-->
-                    <span class="search">
-                        <input type="text" value="Search..."/>
-                        <input type="button" value="Go"/>
-                    </span>
-                    <span class="signin">
-                        <input type="button" value="Sign In"/>
-                    </span>
-                    <span class="basket">
-                        <a href="/cart" title="cart">
-                            <img class="basket_image" src="images/design/cartnew.png" alt="Cart"/>
-                        </a>
-                    </span>
-                </div>
-            </nav>
-        </form>
+        <nav class="header-nav">
+            <div class="first_line">
+                <span class="logo">RADOS</span>
+                <span class="search">
+                    <input type="text" value="Search..."/>
+                    <input type="button" value="Go" class="search_button"/>
+                </span>
+                <span class="signin">
+                    <input type="button" value="Sign In" class="signin_button"/>
+                </span>
+                <span class="basket">
+                    <a href="/cart" title="cart">
+                        <img class="basket_image" src="images/design/cartnew.png" alt="Cart"/>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <span class="tagline">Vitamins & Proteins</span>
     </header>
-    <!--<nav>
-        <a href="/">All</a> |
-        <a href="/proteins/">Proteins</a> |
-        <a href="/vitamins/">Vitamins</a> |
-        <a href="/other/">Other</a>
-    </nav>-->
+    <nav class="second_line">
+        <a class="link" href="/">All</a>
+        <a class="link" href="/proteins/">Proteins</a>
+        <a class="link" href="/vitamins/">Vitamins</a>
+        <a class="link" href="/other/">Other</a>
+    </nav>
     <div>
-        <img src="images/design/provit.jpg" alt="Proteins & Vitamins"/> 
+        <img class="provit" src="images/design/provit.jpg" alt="Proteins & Vitamins"/> 
     </div>
+    <h2>Our Products</h2>
     <section id="products">
-        <h2>Our Products</h2>
-        <form>
-            <div class="product">
-                <div class="product_image_container">
-                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
-                </div>
-                <div class="product_name">
-                    Protein
-                </div>
-                <div class="product_add">
-                    <select name="quantity" id="quantity0" class="add_to_cart_quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <input type="button" id="add_to_cart_button0" value="Add to Cart" class="add_to_cart_button"/> 
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_image_container">
-                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
-                </div>
-                <div class="product_name">
-                    Protein
-                </div>
-                <div class="product_add">
-                    <select name="quantity" id="quantity1" class="add_to_cart_quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <input type="button" id="add_to_cart_button1" value="Add to Cart" class="add_to_cart_button"/> 
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_image_container">
-                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
-                </div>
-                <div class="product_name">
-                    Protein
-                </div>
-                <div class="product_add">
-                    <select name="quantity" id="quantity2" class="add_to_cart_quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <input type="button" id="add_to_cart_button2" value="Add to Cart" class="add_to_cart_button"/> 
-                </div>
-            </div>
-            <div class="product">
-                <div class="product_image_container">
-                    <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
-                </div>
-                <div class="product_name">
-                    Protein
-                </div>
-                <div class="product_add">
-                    <select name="quantity" id="quantity3" class="add_to_cart_quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <input type="button" id="add_to_cart_button3" value="Add to Cart" class="add_to_cart_button"/> 
-                </div>
-            </div>
-        </form>
+        <div class="product">
+            <span class="product_image_container">
+                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+            </span><br/>
+            <span class="product_name">
+                Protein
+            </span><br/>
+            <span class="product_add">
+                <select name="quantity" id="quantity0" class="add_to_cart_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" id="add_to_cart_button0" value="Add to Cart" class="add_to_cart_button"/> 
+            </span>
+        </div>
+        <div class="product">
+            <span class="product_image_container">
+                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+            </span><br/>
+            <span class="product_name">
+                Protein
+            </span><br/>
+            <span class="product_add">
+                <select name="quantity" id="quantity1" class="add_to_cart_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" id="add_to_cart_button1" value="Add to Cart" class="add_to_cart_button"/> 
+            </span>
+        </div>
+        <div class="product">
+            <span class="product_image_container">
+                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+            </span><br/>
+            <span class="product_name">
+                Protein
+            </span><br/>
+            <span class="product_add">
+                <select name="quantity" id="quantity2" class="add_to_cart_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" id="add_to_cart_button2" value="Add to Cart" class="add_to_cart_button"/> 
+            </span>
+        </div>
+        <div class="product">
+            <span class="product_image_container">
+                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+            </span><br/>
+            <span class="product_name">
+                Protein
+            </span><br/>
+            <span class="product_add">
+                <select name="quantity" id="quantity3" class="add_to_cart_quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <input type="button" id="add_to_cart_button3" value="Add to Cart" class="add_to_cart_button"/> 
+            </span>
+        </div>
     </section>
     <section>
         <h2>Join Us</h2>
