@@ -146,3 +146,44 @@ a.link:hover
 {
     width: 100%;
 }
+.social{
+    width: 50px;
+}
+.footer 
+{
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+    vertical-align: top;
+}
+.footer_cell{
+    vertical-align: top;
+}
+.cart_image{
+    height: 50px;
+    width: 50px;
+}
+.cart_product_name{
+    font-size: 18px;
+}
+.cart_quantity
+{
+    height: 24px;
+    line-height: 24px;
+}
+.cart_body 
+{
+    background-image: linear-gradient(#d3cbdc, #009966);
+    background-repeat: no-repeat;
+}
+.cart_product
+{
+    text-align: left;
+    box-shadow: lightgray 3px 3px;
+    margin: 10px;
+    min-width: 300px;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
