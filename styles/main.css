@@ -187,3 +187,8 @@ a.link:hover
     align-items: center;
     display: flex;
 }
+.total{
+    text-align: right;
+    color: white;
+    font-weight: bold;
+}

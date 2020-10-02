@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RADOS</title>
     <link rel="stylesheet" href="styles/main.css"/>
+    <script src="scripts/site.js"></script>
 </head>
 <body>
     <div class="slogan">Healthy Way = Longer Life</div>
@@ -13,7 +14,7 @@
             <div class="first_line">
                 <span class="logo">RADOS</span>
                 <span class="search">
-                    <input type="text" value="Search..."/>
+                    <input type="text" value="Search..." onfocus="clearSearch(this)" onblur="setSearch(this)"/>
                     <input type="button" value="Go" class="search_button"/>
                 </span>
                 <span class="signin">
@@ -29,10 +30,10 @@
         <span class="tagline">Vitamins & Proteins</span>
     </header>
     <nav class="second_line">
-        <a class="link" href="/">All</a>
-        <a class="link" href="/proteins/">Proteins</a>
-        <a class="link" href="/vitamins/">Vitamins</a>
-        <a class="link" href="/other/">Other</a>
+        <a class="link" href="#products">All</a>
+        <a class="link" href="#products">Proteins</a>
+        <a class="link" href="#products">Vitamins</a>
+        <a class="link" href="#products">Other</a>
     </nav>
     <div>
         <img class="provit" src="images/design/provit.jpg" alt="Proteins & Vitamins"/> 
@@ -41,7 +42,7 @@
     <section id="products">
         <div class="product">
             <span class="product_image_container">
-                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+                <img src="images/products/protein1.png" alt="Protein" class="product_image"/>
             </span><br/>
             <span class="product_name">
                 Protein
@@ -64,7 +65,7 @@
         </div>
         <div class="product">
             <span class="product_image_container">
-                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+                <img src="images/products/protein2.png" alt="Protein" class="product_image"/>
             </span><br/>
             <span class="product_name">
                 Protein
@@ -87,7 +88,7 @@
         </div>
         <div class="product">
             <span class="product_image_container">
-                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+                <img src="images/products/protein3.png" alt="Protein" class="product_image"/>
             </span><br/>
             <span class="product_name">
                 Protein
@@ -110,7 +111,7 @@
         </div>
         <div class="product">
             <span class="product_image_container">
-                <img src="images/products/protein.jpg" alt="Protein" class="product_image"/>
+                <img src="images/products/protein4.png" alt="Protein" class="product_image"/>
             </span><br/>
             <span class="product_name">
                 Protein
@@ -139,7 +140,7 @@
                 <img src="images/design/youtube.png" alt="Youtube" class="social"/>
             </a></br>
             <a href="http://instagram.com">
-                <img src="images/design/instagram.jpeg" alt="Instagram" class="social"/>
+                <img src="images/design/instagram.png" alt="Instagram" class="social"/>
             </a></br>
             <a href="http://facebook.com">
                 <img src="images/design/facebook.png" alt="Facebook" class="social"/>
