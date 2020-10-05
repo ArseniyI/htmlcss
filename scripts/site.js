@@ -25,6 +25,33 @@
     document.getElementById("total").innerText = round(total);
  }
 
+function onCartLoad()
+{
+    const urlParams = new URLSearchParams(window.location.search);
+
+    for(let index = 0; ; index++)
+    {
+        let quantity = document.getElementById("quantity" + index);
+
+        if(quantity)
+        {
+            const value = urlParams.get(index);
+
+            if(value)
+            {
+                quantity.value = value;
+            }  
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    calculateAll();
+}
+
+
  function calculateAll()
  {
     // Calculate subtotals
@@ -67,4 +94,25 @@
      {
          control.value = "Search...";
      }
+ }
+
+ function onCartClick()
+ {
+    let params = '';
+    
+    for(let index = 0; ; index++)
+    {
+        let quantity = document.getElementById("quantity" + index);
+
+        if(quantity)
+        {
+            params += (params.length === 0 ? '?' : '&') + index + '=' + quantity.value;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    window.location.href = "cart.html" + params;
  }

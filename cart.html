@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="styles/main.css"/>
-    <script src="scripts/site.js"></script>
 </head>
-<body class="cart_body" onLoad="calculateAll()">
+<body class="cart_body" onLoad="onCartLoad()">
 <input type="button" value="Back" class="add_to_cart_button" onclick="back()"/>
     <section>
         <h1>Shopping Cart</h1>
@@ -20,6 +19,7 @@
             </span>
             <span class="product_add">
                 <select name="quantity" id="quantity0" class="cart_quantity" onchange="calculateSubtotal(0)">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -47,6 +47,7 @@
             </span>
             <span class="product_add">
                 <select name="quantity" id="quantity1" class="cart_quantity" onchange="calculateSubtotal(1)">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -74,6 +75,7 @@
             </span>
             <span class="product_add">
                 <select name="quantity" id="quantity2" class="cart_quantity" onchange="calculateSubtotal(2)">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -101,6 +103,7 @@
             </span>
             <span class="product_add">
                 <select name="quantity" id="quantity3" class="cart_quantity" onchange="calculateSubtotal(3)">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -126,5 +129,6 @@
             0
         </span>
     </section>
+    <script src="scripts/site.js"></script>
 </body>
 </html>
